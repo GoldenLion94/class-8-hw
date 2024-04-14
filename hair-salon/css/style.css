@@ -1,0 +1,324 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Header */
+
+.ayesha {
+  background-image: url("/hair-salon/ayesha.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 2rem;
+  width: 10%;
+  margin: 1rem 3rem 0 2rem;
+}
+
+.loop {
+  background-image: url("/hair-salon/loop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.bag {
+  background-image: url("/hair-salon/bag.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+nav * {
+  float: left;
+}
+
+nav {
+  width: 100%;
+  clear: both;
+}
+nav ul {
+  width: 80%;
+}
+nav ul li {
+  padding-right: 1rem;
+  list-style: none;
+}
+nav ul li:last-child {
+  float: right;
+}
+/* Main */
+main {
+  position: relative;
+  clear: both;
+  width: 100%;
+  padding: 8rem 0 0 8rem;
+}
+
+main h1 {
+  font-weight: 400;
+  font-size: 5rem;
+}
+
+main p {
+  padding-bottom: 1rem;
+}
+
+main > span {
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  background: black;
+}
+
+.discout-promo {
+  color: white;
+  background: black;
+  padding: 2rem 1rem;
+  padding: 1.5rem 3rem 3rem 3rem;
+  margin-top: 2rem;
+  margin: 5rem 40rem 4rem 0;
+  margin-right: 40rem;
+}
+.discout-promo p {
+  text-align: left;
+}
+.discout-promo p strong {
+  line-height: 4rem;
+  font-size: 2rem;
+  padding-top: 0.5rem;
+}
+
+main .promo-button {
+  color: black;
+  background: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.main-button {
+  margin-left: 70%;
+}
+
+.main-button span {
+  color: black;
+  background: white;
+  padding: 2rem;
+  border: 0.1rem solid black;
+  border-radius: 8rem;
+}
+.mainSection {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.mainSection div {
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* section one */
+
+.sectionOne {
+  width: 100%;
+  clear: both;
+  background-color: rgba(244, 244, 246);
+}
+
+.sectionOne1 {
+  float: left;
+  width: 50%;
+  padding: 0 6rem;
+}
+
+/* Section 2 */
+
+.sectionOne2 {
+  float: left;
+  width: 50%;
+  padding: 2rem 0 0 5rem;
+}
+
+.sectionTwo {
+  width: 100%;
+  clear: both;
+}
+.sectionTwo div {
+  float: left;
+  width: 33.3333%;
+  padding: 2rem 15rem 2rem 6rem;
+}
+
+.sectionTwo img {
+  position: relative;
+}
+.sectionTwo div > div {
+  background: black;
+  color: white;
+  width: 100px;
+  height: 80px;
+}
+
+.sectionTwo h5,
+.sectionTwo span {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section 3 */
+
+.sectionThree {
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding: 6 16rem;
+  margin: 4rem 0 0 6rem;
+}
+.sectionThree strong {
+}
+
+.sectionThree1 {
+  float: left;
+  width: 50%;
+  height: 400px;
+  background-color: rgb(241, 241, 241);
+  padding: 4rem 8rem;
+  font-size: 1.2rem;
+  margin: 4rem 0 4rem 0;
+}
+
+.sectionThree1 h3 {
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.sectionThree2 {
+  background-image: url("/hair-salon/sectionThreePhoto.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: right;
+  width: 50%;
+  height: 400px;
+  margin: 4rem 0 4rem 0;
+}
+
+.sectionThree1 span ~ span {
+  color: white;
+  background: black;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  width: 100%;
+  font-size: small;
+}
+.sectionThree1 strong {
+  font-size: 2rem;
+}
+/*
+/* Last Section */
+
+.lastSection {
+  margin-left: 5rem;
+  width: 100%;
+}
+.lastSectionContainer1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.lastSectionContainer2 {
+  width: 100%;
+  clear: both;
+  padding-left: 2rem;
+}
+.lastSection1,
+.lastSection2,
+.lastSection3 {
+  float: left;
+  width: 33.3333%;
+}
+
+.lastSection1_1 {
+  background-image: url("/hair-salon/lastSection1_1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 15rem;
+  margin-bottom: 1rem;
+}
+.lastSection1_2 {
+  background-image: url("/hair-salon/lastSection1_2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30rem;
+  margin-bottom: 1rem;
+}
+
+.lastSection2_1 {
+  background-image: url("/hair-salon/lastSection2_1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30rem;
+  margin-bottom: 1rem;
+}
+.lastSection2_2 {
+  background-image: url("/hair-salon/lastSection2_2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 15rem;
+  margin-bottom: 1rem;
+}
+
+.lastSection3_1 {
+  background-image: url("/hair-salon/lastSection3_1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 15rem;
+  margin-bottom: 1rem;
+}
+.lastSection3_2 {
+  background-image: url("/hair-salon/lastSection3_2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

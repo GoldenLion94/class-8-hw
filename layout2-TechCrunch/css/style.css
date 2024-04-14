@@ -1,0 +1,100 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+nav,
+main,
+aside {
+  float: left;
+  width: 20%;
+  display: block;
+}
+nav img {
+  width: 100%;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 3rem;
+}
+
+nav > a {
+  margin-left: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+main {
+  width: 50%;
+}
+main > img {
+  width: 100%;
+  height: auto;
+}
+
+main > p {
+  color: gray;
+}
+
+aside {
+  width: 30%;
+}
+
+aside ul {
+  list-style: none;
+}
+aside ul li {
+  border-bottom: 0.5px solid gray;
+}
+
+.spotify {
+  color: gray;
+}
+
+footer section {
+  float: left;
+  width: 33%;
+  padding-top: 1.5rem;
+}
+
+footer img {
+  width: 100%;
+}
+footer p,
+footer span + span {
+  color: gray;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

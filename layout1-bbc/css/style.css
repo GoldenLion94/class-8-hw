@@ -1,0 +1,103 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 60px;
+  background: black;
+  color: white;
+  padding-top: 10px;
+  clear: both;
+}
+nav * {
+  float: left;
+  width: 10%;
+  color: white;
+  display: block;
+}
+nav img {
+  width: 7em;
+}
+nav img + img {
+  width: 3rem;
+}
+header nav > a {
+  padding-top: 1rem;
+}
+
+nav ul {
+  width: 65%;
+}
+
+nav ul li {
+  border-left: 0.2px solid white;
+  padding-left: 0.2px;
+}
+nav form input {
+  width: 100%;
+}
+
+main + section > section {
+  width: 33.3333%;
+  float: left;
+}
+main > section {
+  width: 50%;
+  height: 500px;
+  float: left;
+  border: 1px solid black;
+}
+main > section > img {
+  background-image: url("ayout1-bbc/imgs/arabJew.jpg");
+}
+
+main section h1 {
+  padding-top: 15rem;
+}
+main section + section h3 {
+  padding-top: 8rem;
+}
+
+main section + section section {
+  width: 50%;
+  height: 250px;
+  float: left;
+
+  border: 1px solid black;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 460px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

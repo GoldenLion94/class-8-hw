@@ -1,0 +1,301 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Tablet Format */
+
+/* Header */
+
+header {
+  clear: both;
+  width: 100%;
+  padding: 0 5rem;
+  margin: 0% 0 0 6em;
+}
+nav ul li {
+  list-style: none;
+  width: 12.5%;
+  float: left;
+}
+.shopping-cart {
+  background-image: url("/Restaurant/shoppingCart.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 1.5rem;
+}
+
+.loop {
+  background-image: url("/Restaurant/loop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 1rem;
+}
+
+/* Main */
+main {
+  width: 100%;
+  padding-left: 2rem;
+}
+.main-left,
+.main-right {
+  width: 50%;
+  float: left;
+}
+
+.main-right {
+  background-image: url("/Restaurant/main.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+
+.main-button input,
+.main-button span {
+  float: left;
+  width: 50%;
+}
+
+.main-button input {
+  border-radius: 0.2rem;
+  padding: 0.5rem 10rem 0.5rem 1rem;
+}
+
+.main-button span {
+  text-align: center;
+  color: white;
+  background: orange;
+  border: 0.5px solid orange;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  width: 25%;
+}
+
+/* Section 2 */
+.sectionTwoContainer {
+  width: 100%;
+}
+
+.sectionTwoInfo,
+.sectionTwo1,
+.sectionTwo2 {
+  height: 40rem;
+  width: 40%;
+  float: left;
+  background: white;
+}
+.sectionTwo1 {
+  background-image: url("/Restaurant/sectionTwo1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30%;
+}
+.sectionTwo2 {
+  background-image: url("/Restaurant/sectionTwo2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30%;
+}
+.sectionTwoContainer .button {
+  text-align: center;
+  color: white;
+  background: orange;
+  border: 0.5px solid orange;
+  border-radius: 0.2rem;
+  padding: 0.5rem 0;
+  margin: 0 5rem;
+}
+
+/* Section 3 */
+
+.sectionThreeContainer {
+  background: rgb(232, 237, 240);
+}
+.sectionThreeContainer h5,
+.sectionThreeContainer h2 {
+  text-align: center;
+}
+.sectionThreeContainer h5 {
+  color: orange;
+}
+
+.sectionThreeContainer ul li {
+  list-style: none;
+  text-align: center;
+  float: left;
+  width: 20%;
+}
+.sectionThreeContainer > ul {
+  padding: 2rem 12rem 2rem 12em;
+}
+
+.sectionThreeImgContainer ul li {
+  float: left;
+  list-style: none;
+  height: 280px;
+  width: 23%;
+  margin: 0.2rem 0.5rem;
+}
+
+.sectionThreeCard1 {
+  background-image: url("/Restaurant/sectionThreeCard1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sectionThreeCard2 {
+  background-image: url("/Restaurant/sectionThreeCard2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sectionThreeCard3 {
+  background-image: url("/Restaurant/sectionThreeCard3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sectionThreeCard4 {
+  background-image: url("/Restaurant/sectionThreeCard4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sectionThreeCard5 {
+  background-image: url("/Restaurant/sectionThreeCard5.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sectionThreeCard6 {
+  background-image: url("/Restaurant/sectionThreeCard6.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sectionThreeCard7 {
+  background-image: url("/Restaurant/sectionThreeCard7.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sectionThreeCard8 {
+  background-image: url("/Restaurant/sectionThreeCard8.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sectionThreeLoader {
+  background-image: url("/Restaurant/sectionThreeLoader.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  clear: both;
+  height: 20px;
+  margin: 2rem 0 0 40rem;
+}
+
+/* Section 4 */
+
+.sectionFour {
+  width: 100%;
+  padding: 3rem;
+}
+.sectionFourContainer1 {
+  text-align: center;
+}
+
+.sectionFourContainer2 {
+  width: 100%;
+}
+.sectionFourSubContainer2,
+.sectionFourSubContainer3 {
+  width: 50%;
+  float: left;
+  margin-bottom: 2rem;
+}
+
+.sectionFourSubContainer2 span,
+.sectionFourSubContainer3 span {
+  width: 100%;
+  float: left;
+  padding-left: 16rem;
+}
+
+.sectionFourContainer3 {
+  width: 100%;
+}
+.four-img {
+  clear: both;
+  background-image: url("/Restaurant/sectionFourImg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 350px;
+  margin-left: 25rem;
+}
+.numberColor {
+  color: orange;
+}
+
+.phoneImg {
+  clear: both;
+  background-image: url("/Restaurant/phoneImg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 100%;
+  margin: 0 0 1rem 40rem;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  text-align: center;
+}
+
+.userPhoto {
+  background-image: url("/Restaurant/userPhoto.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  margin: 0 0 1rem 39rem;
+}
+
+.rating {
+  background-image: url("/Restaurant/rating.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 20px;
+  margin: 0.3rem 0 1rem 39rem;
+}
+
+footer > span {
+  color: orange;
+}
+footer > span ~ span {
+  color: gray;
+}
+footer p {
+  padding: 1rem 10rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

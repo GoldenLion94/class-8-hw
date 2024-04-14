@@ -1,0 +1,230 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Header */
+header {
+  height: 60px;
+  padding-top: 10px;
+  clear: both;
+  background: rgb(105, 118, 136);
+}
+header nav * {
+  float: left;
+}
+header nav > div + div + div {
+  width: 45%;
+}
+
+header nav > div {
+  width: 45%;
+}
+
+header nav > div + div {
+  width: 10%;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+header nav > div + div a {
+  text-align: center;
+}
+
+header nav > div + div + div {
+  width: 45%;
+}
+
+header nav > div + div + div > button {
+  float: right;
+  padding: 0.3rem;
+  margin-right: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav > div > ul {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+header nav > div > ul > li + li {
+  padding-left: 1rem;
+}
+
+/* MAIN */
+main *,
+main + section,
+main + section + section + section {
+  text-align: center;
+  clear: both;
+  display: block;
+}
+
+main {
+  background: rgb(105, 118, 136);
+  color: white;
+  padding: 4rem 5rem 2rem 5rem;
+}
+.vid-img div {
+  float: left;
+  position: absolute;
+  margin-left: 35rem;
+}
+
+.vid-img span {
+  float: right;
+  margin: 1rem 35rem;
+  clear: both;
+}
+
+main > span {
+  color: black;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+/* WHY Section */
+main + section {
+  padding: 8rem 25rem;
+}
+main + section + section section {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 8rem;
+  background: rgb(220, 223, 226);
+}
+
+main + section + section section p {
+  margin: 0 8rem 3rem 8rem;
+}
+main + section + section span {
+  border: 1px solid rgb(174, 175, 176);
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+}
+
+body section + section div {
+  width: 300px;
+  height: 180px;
+  background: rgb(105, 118, 136);
+  margin: 6rem 0 2rem 13rem;
+}
+
+/* Volunteer */
+
+main + section + section + section {
+  padding: 8rem 25rem;
+}
+
+main + section + section + section > h4 {
+  border: 2px solid rgb(174, 175, 176);
+  width: 30%;
+  padding: 1rem 2rem;
+  margin-left: 15rem;
+}
+
+/*Address Section*/
+
+footer {
+  background: rgb(24, 31, 41);
+  color: white;
+  display: block;
+  width: 100%;
+}
+
+.footer-left {
+  background: rgb(24, 31, 41);
+  width: 50%;
+  float: left;
+}
+.footer-left img {
+  padding: 1rem 0 0 3rem;
+}
+
+.footer-left div {
+  float: left;
+  width: 100%;
+}
+
+.footer-left div + div {
+  padding-bottom: 0.9rem;
+}
+
+.footer-left div h3 {
+  padding-left: 3.5rem;
+  margin-bottom: 0;
+  color: rgb(100, 113, 130);
+}
+
+.footer-left ul {
+  list-style: none;
+}
+
+.footer-left ul li {
+  float: left;
+  padding-left: 1rem;
+}
+.footer-right {
+  background: rgb(24, 31, 41);
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+.footer-right address span {
+  color: white;
+}
+
+.footer-right address {
+  padding: 3.5rem 2rem 3.5rem 0;
+  color: rgb(171, 173, 177);
+}
+
+/* Footer */
+
+footer + section p {
+  background: rgb(24, 31, 41);
+  width: 100%;
+  float: left;
+  color: white;
+  margin: 0;
+  border-top: 1px solid white;
+  padding: 1rem 0 2rem 3.5rem;
+}
+footer + section span {
+  float: right;
+  padding-right: 5rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
