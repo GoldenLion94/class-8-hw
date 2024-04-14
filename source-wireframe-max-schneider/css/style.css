@@ -1,0 +1,228 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  background: rgb(244, 246, 249);
+  color: rgb(48, 67, 85);
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* HEADER */
+header {
+}
+header nav {
+  margin-top: 1rem;
+  width: 100%;
+  position: relative;
+}
+nav h2 {
+  float: left;
+  width: 33.3333%;
+  padding-left: 2rem;
+}
+nav ul {
+  float: left;
+  width: 33.3333%;
+  list-style: none;
+}
+
+nav ul li {
+  float: left;
+  width: 25%;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+nav div {
+  float: left;
+  width: 33.3333%;
+  padding-left: 20rem;
+}
+
+/* MAIN */
+
+main {
+  width: 100%;
+  float: left;
+  margin-top: 5rem;
+}
+.main-left {
+  margin-top: 7rem;
+  float: left;
+  width: 50%;
+  padding-left: 7rem;
+}
+.main-right {
+  float: left;
+  width: 50%;
+}
+
+.main-right img {
+  width: 100%;
+  height: 100%;
+}
+
+main h1 {
+  font-weight: 800px;
+}
+
+main div {
+  float: left;
+  width: 100%;
+}
+main div form {
+  float: left;
+  width: 50%;
+}
+main div form input {
+  width: 100%;
+  padding: 0.4rem;
+  background: rgb(227, 233, 240);
+}
+
+main div > div {
+  float: left;
+  width: 50%;
+}
+
+main p {
+  padding: 3rem 13rem 0 0;
+  font-weight: 700;
+}
+
+/*Third Section*/
+.third-section {
+  float: left;
+  width: 100%;
+  padding-top: 4rem;
+}
+
+.card {
+  float: left;
+  width: 25%;
+  padding: 6rem 6rem 6rem 7rem;
+}
+
+.third-section img {
+  width: 50px;
+}
+
+.third-section a {
+  text-decoration: none;
+  font-weight: 400;
+}
+/*Footer*/
+
+footer {
+  background: white;
+  padding: 2rem;
+}
+
+footer h2 {
+  background-color: white;
+  padding: 2rem 0 0 5rem;
+}
+
+footer p {
+  background-color: white;
+
+  padding: 0 35rem 0 5rem;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+button {
+  padding: 0.5rem 2rem;
+  color: white;
+  background: rgb(48, 67, 85);
+}
+
+@media all and (max-width: 425px) {
+  nav ul,
+  nav div ~ div,
+  .main-right,
+  footer,
+  main + section {
+    display: none;
+  }
+  nav * {
+    float: left;
+    position: relative;
+  }
+
+  .burger {
+    height: 50px;
+    width: 50px;
+    background-image: url("/source-wireframe-max-schneider/hamburger.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 1rem;
+  }
+  nav h2 {
+    position: absolute;
+    margin: 1rem 0 0 9rem;
+  }
+  main {
+    border-top: 1px solid gray;
+    margin-top: 0%;
+    padding-top: 4rem;
+    position: relative;
+  }
+
+  .main-left {
+    position: absolute;
+    margin-top: 0%;
+    width: 100%;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .main-left > div {
+    width: 100%;
+  }
+  .main-left > div form,
+  .main-left > div button {
+    float: left;
+    width: 90%;
+    margin: 1rem 1rem 1rem 0;
+  }
+
+  .main-left p {
+    width: 100%;
+    padding: 0 2rem 0 0;
+  }
+
+  .mediaQueryBackground {
+    height: 100rem;
+    width: 100%;
+    background-image: url("/source-wireframe-max-schneider/mediaQueryBackground.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
